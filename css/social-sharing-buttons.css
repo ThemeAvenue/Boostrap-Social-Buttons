@@ -19,7 +19,7 @@
 }
 */
  
- [class^="icon-"]:before, [class*=" icon-"]:before {
+ [class^="fa-"]:before, [class*=" fa-"]:before {
   font-family: "social-sharing-buttons";
   font-style: normal;
   font-weight: normal;
@@ -50,8 +50,8 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-facebook-1:before { content: '\e803'; } /* '' */
-.icon-stumbleupon:before { content: '\e804'; } /* '' */
-.icon-twitter-1:before { content: '\e805'; } /* '' */
-.icon-gplus:before { content: '\e806'; } /* '' */
-.icon-linkedin:before { content: '\e807'; } /* '' */
+.fa-facebook:before { content: '\e803'; } /* '' */
+.fa-stumbleupon:before { content: '\e804'; } /* '' */
+.fa-twitter:before { content: '\e805'; } /* '' */
+.fa-google-plus:before { content: '\e806'; } /* '' */
+.fa-linkedin:before { content: '\e807'; } /* '' */
