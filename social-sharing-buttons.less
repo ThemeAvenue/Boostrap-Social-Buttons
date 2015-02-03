@@ -1,0 +1,34 @@
+@import 'less/bootstrap.less';
+@import (less) 'css/social-sharing-buttons.css';
+
+@social-btn-color: white;
+@social-brand-twitter: #00acee;
+@social-brand-facebook: #3b5998;
+@social-brand-googleplus: #e93f2e;
+@social-brand-stumbleupon: #f74425;
+@social-brand-linkedin: #0e76a8;
+
+.share-buttons {
+	font-size: 0px;
+	.btn {
+		font-size: @font-size-base;
+		margin: 5px;
+		transition: background-color .25s ease;
+		border-radius: 0px;
+	}
+}
+.btn-twitter {
+	.button-variant(@social-btn-color; @social-brand-twitter; @social-brand-twitter;);
+}
+.btn-facebook {
+	.button-variant(@social-btn-color; @social-brand-facebook; @social-brand-facebook;);
+}
+.btn-googleplus {
+	.button-variant(@social-btn-color; @social-brand-googleplus; @social-brand-googleplus;);
+}
+.btn-stumbleupon {
+	.button-variant(@social-btn-color; @social-brand-stumbleupon; @social-brand-stumbleupon;);
+}
+.btn-linkedin {
+	.button-variant(@social-btn-color; @social-brand-linkedin; @social-brand-linkedin;);
+}
