@@ -2,6 +2,9 @@
 @import (less) 'css/social-sharing-buttons.css';
 
 @social-btn-color: white;
+@social-fixed-size: 50px;
+@social-fixed-amount: 5;
+
 @social-brand-twitter: #00acee;
 @social-brand-facebook: #3b5998;
 @social-brand-googleplus: #e93f2e;
@@ -17,6 +20,31 @@
 		border-radius: 0px;
 	}
 }
+.share-buttons-fixed-l,
+.share-buttons-fixed-r {
+	position: fixed;
+	top: 50%;
+	margin: -((@social-fixed-size * @social-fixed-amount) / 2) 0 0 0;
+	height: @social-fixed-size * @social-fixed-amount;
+
+	.btn,
+	.btn i {
+		display: block;
+		margin: 0;
+		padding: 0;
+		width: @social-fixed-size;
+		height: @social-fixed-size;
+		line-height: @social-fixed-size;
+		overflow: hidden;
+	}
+}
+.share-buttons-fixed-l {
+	left: 0;
+}
+.share-buttons-fixed-r {
+	right: 0;
+}
+
 .btn-twitter {
 	.button-variant(@social-btn-color; @social-brand-twitter; @social-brand-twitter;);
 }
